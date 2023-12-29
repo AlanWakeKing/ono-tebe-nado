@@ -111,7 +111,7 @@ header {
 .cover__text {
   color: #fff;
   text-align: start;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -122,7 +122,7 @@ header {
 .cover__buttom {
   border: 1px solid currentColor;
   color: #fff;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -133,10 +133,7 @@ header {
 }
 
 .title {
-	margin-top: 165px;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-bottom: 127px ;
+	margin: 165px 50px 127px 50px;
 	z-index: 2;
 	position: relative;
 	display: flex;
@@ -157,16 +154,12 @@ header {
 }
 .end {
   text-align: right;
-  margin-right: -30px;
 }
-.letter-spacing-24
+.no-letter-spacing
 {
-	letter-spacing: 24.2px;
+	letter-spacing: 0px;
 }
-.letter-spacing-30 {
-  letter-spacing: 30px;
-}
-.letter-spacing-60 {
+.letter-spacing-extended {
   letter-spacing: 60px;
 }
 
