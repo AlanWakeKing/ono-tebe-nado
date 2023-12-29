@@ -12,8 +12,8 @@ header {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 150px 1fr;
-  justify-items: center;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-items: end;
   align-items: center;
   padding: 0 24px 0 24px;
 }
@@ -35,10 +35,6 @@ header {
   border-bottom: 1px solid #000;
   transition: border-bottom .3s, list-style-type .3s;
 }
-.menu__link:nth-child(1) {
-  list-style-type: none;
-  border-bottom: none;
-}
 .menu__link:hover {
   list-style-type: none;
   border-bottom: none;
@@ -49,13 +45,18 @@ header {
   color: #000;
 }
 .link:hover {
-  text-decoration: none;
+  text-decoration: none;	
 }
 
 .active {
   text-decoration: none;
+	list-style-type: none;
+  border-bottom: none;
 }
-
+.header__logo
+{
+	width: 148px;
+}
 .logo_link {
   display: block;
   width: 100%;
@@ -65,7 +66,7 @@ header {
 /* ADDRESS */
 .header__address {
   display: grid;
-  margin-left: 156px;
+	margin-right: 26px;
   color: #000;
   justify-items: start;
   line-height: 1.35;
@@ -93,34 +94,35 @@ header {
   min-height: 757px;
   background-image: url(../images/lotus-flower.png);
   background-repeat: no-repeat;
+	background-position: center;
   background-size: cover;
-  padding: 50px;
-  z-index: -1;
+  z-index: 1;
 }
 .cover__bottem {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 10px;
-  column-gap: 70px;
+	justify-content: flex-end;
+	align-items: center;
+  column-gap: 80px;
   position: relative;
   z-index: 2;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 .cover__text {
   color: #fff;
-  text-align: center;
-  font-family: Raleway;
+  text-align: start;
+  font-family: 'Raleway';
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.27;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  padding-left: 30px;
+	word-spacing: 18px;
 }
 .cover__buttom {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #fff;
+	font-family: 'Raleway';
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -128,19 +130,20 @@ header {
   text-transform: uppercase;
   padding: 12px 30px;
   background-color: transparent;
-  margin-left: -15px;
 }
 
 .title {
-  padding-top: 115px;
-  padding-bottom: 115px;
-  z-index: 2;
-  position: relative;
-  display: flex;
-  row-gap: 10px;
-  flex-direction: column;
+	margin-top: 165px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 127px ;
+	z-index: 2;
+	position: relative;
+	display: flex;
+	row-gap: 10px;
+	flex-direction: column;
 }
-.title__text-start, .title__text-center, .title__text-end {
+.title__text {
   color: #fff;
   font-size: 100px;
   font-style: normal;
@@ -149,14 +152,17 @@ header {
   letter-spacing: 30px;
   text-transform: uppercase;
 }
-.title__text-center {
+.center {
   text-align: center;
 }
-.title__text-end {
+.end {
   text-align: right;
   margin-right: -30px;
 }
-
+.letter-spacing-24
+{
+	letter-spacing: 24.2px;
+}
 .letter-spacing-30 {
   letter-spacing: 30px;
 }
@@ -208,7 +214,6 @@ header {
   height: 100%;
   color: #fff;
   z-index: 2;
-  background-color: red;
   text-decoration: none;
 }
 .card__item {
@@ -218,7 +223,7 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
+	background-position:center;
   background-size: cover;
   padding: 48px 40px;
 }
@@ -284,6 +289,10 @@ header {
   background-color: #000;
   border-radius: 50%;
 }
+.about__logo-img
+{
+	width: auto;
+}
 .about__title {
   grid-area: title;
   align-self: center;
@@ -327,6 +336,10 @@ header {
   column-gap: 32px;
   align-items: center;
 }
+.menu__item:hover
+{
+	text-decoration: none;
+}
 .footer__social {
   display: flex;
   justify-self: end;
@@ -337,16 +350,14 @@ header {
   display: block;
   width: 48px;
   height: 48px;
+	background-image: url(../images/socials.svg);
 }
 .yt {
-  background-image: url(../images/socials.svg);
   background-position: 0px 0px;
 }
 .pn {
-  background-image: url(../images/socials.svg);
   background-position: 48px 0px;
 }
 .vk {
-  background-image: url(../images/socials.svg);
   background-position: 142px 0px;
 }
