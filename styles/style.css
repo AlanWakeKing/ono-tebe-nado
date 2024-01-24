@@ -33,7 +33,9 @@ header {
   text-decoration: none;
   list-style-type: circle;
   border-bottom: 1px solid #000;
-  transition: border-bottom .3s, list-style-type .3s;
+  transition:
+    border-bottom 0.3s,
+    list-style-type 0.3s;
 }
 .menu__link:hover {
   list-style-type: none;
@@ -45,17 +47,16 @@ header {
   color: #000;
 }
 .link:hover {
-  text-decoration: none;	
+  text-decoration: none;
 }
 
 .active {
   text-decoration: none;
-	list-style-type: none;
+  list-style-type: none;
   border-bottom: none;
 }
-.header__logo
-{
-	width: 148px;
+.header__logo {
+  width: 148px;
 }
 .logo_link {
   display: block;
@@ -66,7 +67,7 @@ header {
 /* ADDRESS */
 .header__address {
   display: grid;
-	margin-right: 26px;
+  margin-right: 26px;
   color: #000;
   justify-items: start;
   line-height: 1.35;
@@ -94,19 +95,19 @@ header {
   min-height: 757px;
   background-image: url(../images/lotus-flower.png);
   background-repeat: no-repeat;
-	background-position: center;
+  background-position: center;
   background-size: cover;
   z-index: 1;
 }
 .cover__bottem {
   display: flex;
-	justify-content: flex-end;
-	align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   column-gap: 80px;
   position: relative;
   z-index: 2;
-	margin-left: 50px;
-	margin-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .cover__text {
   color: #fff;
@@ -117,12 +118,12 @@ header {
   font-weight: 400;
   line-height: 1.27;
   text-transform: uppercase;
-	word-spacing: 18px;
+  word-spacing: 18px;
 }
 .cover__buttom {
   border: 1px solid currentColor;
   color: #fff;
-	font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -133,12 +134,12 @@ header {
 }
 
 .title {
-	margin: 165px 50px 127px 50px;
-	z-index: 2;
-	position: relative;
-	display: flex;
-	row-gap: 10px;
-	flex-direction: column;
+  margin: 165px 50px 127px 50px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
 }
 .title__text {
   color: #fff;
@@ -155,9 +156,8 @@ header {
 .end {
   text-align: right;
 }
-.no-letter-spacing
-{
-	letter-spacing: 0px;
+.no-letter-spacing {
+  letter-spacing: 0px;
 }
 .letter-spacing-extended {
   letter-spacing: 60px;
@@ -216,7 +216,7 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
-	background-position:center;
+  background-position: center;
   background-size: cover;
   padding: 48px 40px;
 }
@@ -282,9 +282,8 @@ header {
   background-color: #000;
   border-radius: 50%;
 }
-.about__logo-img
-{
-	width: auto;
+.about__logo-img {
+  width: auto;
 }
 .about__title {
   grid-area: title;
@@ -329,9 +328,8 @@ header {
   column-gap: 32px;
   align-items: center;
 }
-.menu__item:hover
-{
-	text-decoration: none;
+.menu__item:hover {
+  text-decoration: none;
 }
 .footer__social {
   display: flex;
@@ -343,7 +341,7 @@ header {
   display: block;
   width: 48px;
   height: 48px;
-	background-image: url(../images/socials.svg);
+  background-image: url(../images/socials.svg);
 }
 .yt {
   background-position: 0px 0px;
